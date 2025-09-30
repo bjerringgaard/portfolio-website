@@ -1,0 +1,374 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Hind", sans-serif;
+}
+
+h3 {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.headergrid {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.headercontainer1 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.headercontainer2 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto 0 auto 0;
+}
+
+#profilepicture {
+  position: relative;
+  background-image: url("/assets/imgs/profilepicture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-width: 200px;
+  height: 100vh;
+}
+
+#header {
+  height: 100vh;
+  background-color: #4d6560;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#name {
+  font-size: 90px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+#p1_control {
+  width: 50%;
+}
+
+#socialheader {
+  width: 50%;
+  margin: -20px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#socialheader > a:visited,
+#socialheader > a,
+#socialheader > a:hover {
+  text-decoration: none;
+}
+
+#circle_facebook,
+#circle_Linkedin,
+#circle_instagram,
+#circle_mail {
+  color: #4d6560;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px 0 4px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32413e;
+}
+
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram {
+  margin: 0;
+  height: 23px;
+  width: 23px;
+  padding: 5px 0 0 0;
+}
+
+.fa-envelope {
+  margin: 0 0 0 -2px;
+  height: 15px;
+  width: 14px;
+  padding-top: 1px;
+}
+
+/*RESPONSIVE ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+@media screen and (max-width: 1200px) {
+  .foliogrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .clientgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skillgrid {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .headercontainer1 {
+    display: none;
+  }
+
+  .headergrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* |||||||||||||||| DEFINE |||||||||||||||| */
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* |||||||||||||||| NAV |||||||||||||||| */
+
+  #logo {
+    display: none;
+  }
+
+  #menu {
+    margin: 0 0 0 0;
+  }
+
+  .nav {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* |||||||||||||||| HEADER |||||||||||||||| */
+
+  .headercontainer1 {
+    display: none;
+  }
+
+  #name {
+    font-size: 32px;
+  }
+
+  #socialheader {
+    margin: 0 auto;
+  }
+
+  #circle_facebook,
+  #circle_Linkedin,
+  #circle_instagram,
+  #circle_mail {
+    margin: 0 3px 0 3px;
+  }
+
+  /* |||||||||||||||| PORTFOLIO + CLIENTS |||||||||||||||| */
+
+  #portfolio > h2,
+  #clients > h2 {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .client-container1,
+  .client-container2,
+  .client-container3,
+  .client-container4 {
+    margin: 0 auto;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination {
+    margin: -100px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 150px;
+  }
+
+  /* |||||||||||||||| WHO AM I |||||||||||||||| */
+
+  #who_title {
+    height: 250px;
+  }
+
+  /* |||||||||||||||| PROFILE |||||||||||||||| */
+
+  #profile > h2 {
+    font-size: 24px;
+  }
+
+  #profile_btn {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #personal {
+    height: 250px;
+  }
+
+  #personal > h1 {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  #personal > a > button {
+    border-width: thin;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  #intbox > h3,
+  #desbox > h3,
+  #commbox > h3,
+  #busbox > h3 {
+    margin: 0px 0 5px 0;
+    min-width: 70%;
+  }
+
+  #intbox > p,
+  #desbox > p,
+  #commbox > p,
+  #busbox > p {
+    margin: 0 0 20px 0;
+    min-width: 70%;
+  }
+
+  #intbox,
+  #desbox,
+  #commbox,
+  #busbox {
+    margin: 0 auto;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* |||||||||||||||| CONTACT |||||||||||||||| */
+
+  #touch > p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #touch > h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  #touch > a {
+    font-size: 32px;
+  }
+
+  /* |||||||||||||||| FOOTER |||||||||||||||| */
+
+  footer {
+    flex-direction: column;
+  }
+
+  #copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 0px auto;
+  }
+
+  #footer_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+
+  #footer_links > a {
+    color: white;
+    margin: 0 5px;
+  }
+
+  /* |||||||||||||||| GRID |||||||||||||||| */
+
+  .headergrid {
+    grid-template-columns: 1fr;
+  }
+
+  .foliogrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .clientgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .skillgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .profilegrid {
+    grid-template-columns: 1fr;
+  }
+}
